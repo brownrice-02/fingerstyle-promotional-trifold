@@ -7,4 +7,4 @@ comprehensive overview of styles and a world guitar artist map.
 
 
 ## Overview
-![image](/public/Demo.gif)
+![Example GIF](/public/Demo.gif)
