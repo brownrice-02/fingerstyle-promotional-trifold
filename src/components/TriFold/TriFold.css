@@ -1,0 +1,58 @@
+.trifold-container {
+  top: 10px;
+  position: relative;
+  margin: 20px auto;
+  width: 864px; 
+  height: 640px; 
+  perspective: 1500px; 
+  cursor: pointer;
+  justify-content: center;
+}
+
+.left-side,
+.right-side {
+  position: absolute;
+  top: 0;
+  width: 288px;
+  height: 720px;
+  transition: transform 1s;
+}
+
+.left-side {
+  left: 0;
+  transform-origin: right;
+  transform: translateX(calc(-50% + 144px));
+}
+
+.right-side {
+  right: 0;
+  transform-origin: left;
+  transform: translateX(calc(50% - 144px));
+}
+  
+.center {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 288px;
+  height: 720px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+  
+.center-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 288px;
+  height: 720px;
+  transform-style: preserve-3d;
+  transition: opacity 1s;
+}
+
+.trifold-container img {
+  max-width: 100%;
+  height: auto;
+  /* border: 1px solid #a69a8d; */
+}
